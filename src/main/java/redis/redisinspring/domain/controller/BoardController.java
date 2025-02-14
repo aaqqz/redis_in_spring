@@ -17,6 +17,7 @@ public class BoardController {
 
     private final BoardService boardService;
 
+    // Redis Cache Test
     @GetMapping
     public List<Board> getBoards(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "10") int size) {
         return boardService.getBoards(page, size);
