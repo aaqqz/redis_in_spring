@@ -1,4 +1,4 @@
-package redis.redisinspring.entity;
+package redis.redisinspring.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;

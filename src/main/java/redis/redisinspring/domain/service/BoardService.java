@@ -1,4 +1,4 @@
-package redis.redisinspring.service;
+package redis.redisinspring.domain.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
@@ -6,8 +6,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import redis.redisinspring.entity.Board;
-import redis.redisinspring.repository.BoardRepository;
+import redis.redisinspring.domain.entity.Board;
+import redis.redisinspring.domain.repository.BoardRepository;
 
 import java.util.List;
 

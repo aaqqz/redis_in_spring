@@ -1,4 +1,4 @@
-package redis.redisinspring.config;
+package redis.redisinspring.config.redis;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
