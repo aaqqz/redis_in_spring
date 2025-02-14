@@ -5,13 +5,22 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/mydb
     username: root
-    password: password
+    password: pwd1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  sql:
+    init:
+      mode: always # init query(data.sql) 실행
+
   jpa:
+    defer-datasource-initialization: true # init query(data.sql) 실행 (ddl-auto -> data.sql 실행)
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: create
+    show-sql: true # jpa log 보기
+    properties:
+      hibernate:
+        format_sql: true # jpa log(pretty)
+
 
   data:
     redis:
@@ -20,5 +29,5 @@ spring:
 
 logging:
   level:
-    org.springframework.cache: trace # Redis 사용 대한 로그가 조회되도록 설
+    org.springframework.cache: trace # Redis 사용 대한 로그가 조회되도록 설정
 
